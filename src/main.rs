@@ -1,4 +1,4 @@
-
+// Using external Crate Flate2 
 extern crate flate2;
 
 use flate2::write::GzEncoder;
@@ -27,7 +27,7 @@ fn main() {
         "Source len: {:?}",
         input.get_ref().metadata().unwrap().len()
     );
-    
+
     println!("Target len: {:?}", output.metadata().unwrap().len());
     println!("Elapsed: {:?}", start.elapsed());
 }
