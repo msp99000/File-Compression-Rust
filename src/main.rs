@@ -27,7 +27,7 @@ fn main() {
         "Source len: {:?}",
         input.get_ref().metadata().unwrap().len()
     );
-
+    // Print the target length and time elasped
     println!("Target len: {:?}", output.metadata().unwrap().len());
     println!("Elapsed: {:?}", start.elapsed());
 }
