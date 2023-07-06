@@ -24,11 +24,12 @@ fn main() {
     copy(&mut input, &mut encoder).unwrap();
     let output = encoder.finish().unwrap();
 
+
     println!(
         "Source len: {:?}",
         input.get_ref().metadata().unwrap().len()
     );
-    
+
     // Print the target length and time elasped
     println!("Target len: {:?}", output.metadata().unwrap().len());
     println!("Elapsed: {:?}", start.elapsed());
