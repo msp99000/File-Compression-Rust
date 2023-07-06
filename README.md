@@ -1,2 +1,2 @@
-# File-Compression-Rust
+# Rust File Compressor
 File compression project written in Rust
