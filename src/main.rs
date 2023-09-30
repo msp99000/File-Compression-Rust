@@ -9,7 +9,7 @@ use std::io::copy;
 use std::io::BufReader;
 use std::time::Instant;
 
-n main() {
+fn ain() {
     if args().len() != 3 {
         eprintln!("Usage: `source` `target`");
         return;
