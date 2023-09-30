@@ -14,7 +14,7 @@ fn main() {
         eprintln!("Usage: `source` `target`");
         return;
     }
-    // Define input and output
+    // Define the input and output
     let mut input = BufReader::new(File::open(args().nth(1).unwrap()).unwrap());
     let output = File::create(args().nth(2).unwrap()).unwrap();
 
